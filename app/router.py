@@ -1,7 +1,9 @@
 from fastapi import APIRouter
 from app.service import get_analysis_result
 
-router = APIRouter()
+router = APIRouter(
+    tags=["분석 결과"]
+)
 
 @router.get(
     "/api/analysis",
