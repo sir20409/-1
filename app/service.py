@@ -14,10 +14,10 @@ def initialize_analysis():
 
 
     files = [
-        "21년도 데이터.xlsx",
-        "22년도 데이터.xlsx",
-        "23년도 데이터.xlsx",
-        "24년도 데이터.xlsx"
+        "data/21년도 데이터.xlsx",
+        "data/22년도 데이터.xlsx",
+        "data/23년도 데이터.xlsx",
+        "data/24년도 데이터.xlsx"
     ]
 
 
