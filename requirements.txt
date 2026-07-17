@@ -7,3 +7,4 @@ matplotlib
 seaborn
 openpyxl
 scikit-learn
+variance_inflation_factor
