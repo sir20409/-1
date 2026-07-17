@@ -2,7 +2,17 @@ import os
 from app.data_loader import load_data
 
 # 분석 결과를 저장할 전역 변수
-analysis_result = {}
+from app.data_loader import load_data
+from app.analysis import run_analysis
+
+
+def get_analysis_result(dataset):
+
+    df = load_data(dataset)
+
+    result = run_analysis(df)
+
+    return result
 
 
 def analyze_data(df):
@@ -39,9 +49,4 @@ def initialize_analysis():
     analysis_result = analyze_data(df)
 
 
-def get_analysis_result():
-    """
-    API가 호출할 분석 결과 반환
-    """
 
-    return analysis_result
