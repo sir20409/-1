@@ -6,6 +6,8 @@ app = FastAPI(
     title="Phishing Analysis API",
     description="보이스피싱 및 인터넷 사기 회귀분석 API",
     version="1.0.0"
+    docs_url=None,
+    redoc_url=None
 )
 
 # 서버 시작 시 자동 분석
