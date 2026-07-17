@@ -16,10 +16,3 @@ def startup_event():
 # API 등록
 app.include_router(router)
 
-# 기본 확인용
-@app.get("/")
-def root():
-    return {
-        "message": "Server Running",
-        "docs": "/docs"
-    }
