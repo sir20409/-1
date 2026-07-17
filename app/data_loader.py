@@ -1,20 +1,13 @@
-import os
 import pandas as pd
+import os
 
-# 프로젝트 루트 경로
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
-# data 폴더의 엑셀 파일
-DATA_PATH = os.path.join(BASE_DIR, "data", "data.xlsx")
+BASE_PATH = "data"
 
 
-def load_data():
-    """
-    엑셀 파일을 읽어서 DataFrame 반환
-    """
-    if not os.path.exists(DATA_PATH):
-        raise FileNotFoundError(f"파일을 찾을 수 없습니다.\n{DATA_PATH}")
+def load_data(file_name):
+    path = os.path.join(BASE_PATH, file_name)
 
-    df = pd.read_excel(DATA_PATH)
+    if not os.path.exists(path):
+        raise FileNotFoundError(path)
 
-    return df
+    return pd.read_excel(path)
