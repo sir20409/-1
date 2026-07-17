@@ -1,8 +1,9 @@
-FastAPI
-Uvicorn
+fastapi
+uvicorn
 pandas
 numpy
 statsmodels
-scikit-learn
 matplotlib
 seaborn
+openpyxl
+scikit-learn
